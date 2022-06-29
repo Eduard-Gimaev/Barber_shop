@@ -20,11 +20,21 @@
   <div class="form-group">
     <label>Выбери своего барбера</label>
       <select name = "barber" class="form-control">
-      <option>Андрей</option>
-      <option>Серега</option>
-      <option>Вася</option>
-      <option>Дони</option>
-      <option>Грег</option>
+      <option <%= @barber == 'Андрей'? 'selected' : '' %>>Андрей</option>
+      <option <%= @barber == 'Серёга'? 'selected' : '' %>>Серёга</option>
+      <option <%= @barber == 'Вася'? 'selected' : '' %>>Вася</option>
+      <option <%= @barber == 'Дони'? 'selected' : '' %>>Дони</option>
+      <option <%= @barber == 'Грег'? 'selected' : '' %>>Грег</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <label>В какой цвет хотите красить?</label>
+      <select id = "color" name = "color">
+      <option>red</option>
+      <option>green</option>
+      <option>yellow</option>
+      <option>ginger</option>
+      <option>blue</option>
       </select>
   </div>
 
